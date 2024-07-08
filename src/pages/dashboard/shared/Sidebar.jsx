@@ -1,6 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import { FiUsers } from "react-icons/fi";
 import Profile from "../components/Profile";
+import { CiBoxList } from "react-icons/ci";
+import { MdLogout } from "react-icons/md";
 
 
 const Sidebar = () => {
@@ -21,17 +23,16 @@ const Sidebar = () => {
                 end
                 className={({ isActive }) => `flex items-center duration-300 hover:bg-red hover:text-white gap-4 text-xl py-3 px-6 rounded-md ${isActive ? ' text-white bg-red font-bold shadow-xl' : 'text-black/80 font-medium'}`}
             >
-                <FiUsers className="text-4xl" /> Add Student
+                <CiBoxList className="text-4xl" /> Manage Students
             </NavLink>
         </li>
         <li>
-            <NavLink
-                to='/ac'
-                end
-                className={({ isActive }) => `flex items-center duration-300 hover:bg-red hover:text-white gap-4 text-xl py-3 px-6 rounded-md ${isActive ? ' text-white bg-red font-bold shadow-xl' : 'text-black/80 font-medium'}`}
+            <button
+            className='flex  items-center duration-300 hover:bg-red text-black/80 font-medium hover:text-white gap-4 text-xl w-full py-3 px-6 rounded-md '
+               
             >
-                <FiUsers className="text-4xl" /> Add Student
-            </NavLink>
+                <MdLogout className="text-4xl" /> Logout
+            </button>
         </li>
     </>
 

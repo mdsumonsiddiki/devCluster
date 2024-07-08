@@ -3,7 +3,7 @@ import Root from "../layouts/Root";
 import SingIn from "../pages/SingIn";
 import Dashboard from "../layouts/Dashboard";
 import AddStudent from "../pages/dashboard/pages/AddStudent";
-import ManageSutedents from "../pages/dashboard/pages/ManageSutedents";
+import ManageStudents from "../pages/dashboard/pages/ManageStudents";
 
 
 const router = createBrowserRouter([
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <ManageSutedents/>,
+                element: <ManageStudents/>,
             },
             {
                 path: 'addstudent',
