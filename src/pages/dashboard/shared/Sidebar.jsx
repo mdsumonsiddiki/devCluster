@@ -37,7 +37,7 @@ const Sidebar = () => {
     </>
 
     return (
-        <div className="pt-2 px-4 h-full">
+        <div className=" pt-7 md:pt-2  px-4 h-full shadow-2xl">
             <div className="w-full text-center hidden md:block">
                 <Link className="text-red font-bold text-4xl">Dev Cluster</Link>
             </div>

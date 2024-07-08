@@ -7,26 +7,22 @@ import { IoIosSearch } from "react-icons/io";
 const ManageStudents = () => {
     return (
         <div>
-            <div className="flex items-center justify-center gap-8 mb-8">
+            <div className="flex items-center justify-center gap-4 md:gap-8 mb-8 flex-wrap">
                 <h2 className="text-xl font-semibold text-black">Manage Students</h2>
                 <div className="flex items-center gap-4 border-2 rounded-xl border-[#D4D8DD] px-4 bg-[#EFF3F6]">
                     <span className="text-3xl"><IoIosSearch /></span>
                     <input className="focus:outline-none py-4 w-full text-xl bg-transparent text-black" type="text" placeholder="Search" />
                 </div>
-                <div>
+                <div className="flex items-center gap-4 md:gap-8 flex-wrap justify-center">
                     <button className="bg-[#EFF3F6] py-4 px-6 rounded-xl hover:shadow-xl">Export</button>
-                </div>
-                <div>
                     <button className="bg-[#EFF3F6] py-4 px-6 rounded-xl hover:shadow-xl">Filter</button>
-                </div>
-                <div>
                     <button className="bg-[#EFF3F6] py-4 px-6 rounded-xl hover:shadow-xl">Print</button>
                 </div>
                 <h2 className=" text-black text-lg">25 Jul 2022  16:10</h2>
             </div>
-            <div className='container mx-auto px-4 sm:px-8 bg-primary'>
+            <div className='container mx-auto px-4 sm:px-8 '>
                 <div className='-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto'>
-                    <div className='inline-block min-w-full overflow-hidden'>
+                    <div className='inline-block min-w-full overflow-hidden shadow-xl border-2 border-bgPrimary'>
                         <table className='min-w-full leading-normal shadow-2xl'>
                             <thead className="bg-red">
                                 <tr>
