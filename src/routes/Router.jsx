@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
 import SingIn from "../pages/SingIn";
 import Dashboard from "../layouts/Dashboard";
+import AddStudent from "../pages/dashboard/pages/AddStudent";
+import ManageSutedents from "../pages/dashboard/pages/ManageSutedents";
 
 
 const router = createBrowserRouter([
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <h2>outlet</h2>,
+                element: <ManageSutedents/>,
+            },
+            {
+                path: 'addstudent',
+                element: <AddStudent/>,
             },
         ]
         
