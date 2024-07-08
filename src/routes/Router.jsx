@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <SingIn/>,
+                element: <h2>outlet</h2>,
             },
         ]
         
